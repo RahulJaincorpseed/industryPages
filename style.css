@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --mainBlue: #2b63f9;
+  --white: #ffffff;
+  --black: #000000;
+  --darkBlue: #25366e;
+}
+
+/* #industryBox {
+} */
+
+/* hero section */
+
+.industry-hero-img {
+  height: 500px;
+  background-image: url("images/pexels-pixabay-247763.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.industry-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+}
+
+.industry-section .hero-text-box {
+  width: 450px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.industry-section .hero-text-box .support-text {
+  font-size: 20px;
+  background: var(--mainBlue);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.end-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* end */
+
+.in-big-heading {
+  color: #303134;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "roboto", sans-serif;
+}
+
+/* common classes */
+.in-heading {
+  color: #303134;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "roboto", sans-serif;
+}
+
+.cm-paddings {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* end */
+
+/* carosel section */
+
+.industry-banners .item {
+  background: transparent;
+  height: auto;
+  width: 60px;
+  padding: 20px 0px;
+}
+.industry-banners .item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.in-description {
+  font-size: 16px;
+  color: #212529;
+}
+
+.industry-banners .owl-nav .owl-prev {
+  position: absolute;
+  top: 25px;
+  left: -40px;
+}
+.industry-banners .owl-nav .owl-prev span {
+  font-size: 30px;
+}
+
+.industry-banners .owl-nav .owl-next {
+  position: absolute;
+  top: 25px;
+  right: -10px;
+}
+.industry-banners .owl-nav .owl-next span {
+  font-size: 30px;
+}
+
+.industry-banners .owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent;
+  color: #212529;
+  border: none;
+}
+
+.industry-banners .owl-theme .owl-nav [class*="owl-"]:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-nav.disabled {
+  display: block !important;
+}
+
+/* end */
+
+/* industry card */
+
+.ind-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px 0px;
+}
+
+.ind-cards .card {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  height: 220px;
+}
+
+.ind-cards .card .ind-heading {
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.ind-cards .card .ind-data {
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding: 10px 0px;
+}
+
+.ind-cards .card .ind-link {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.ind-cards .card .ind-link:hover {
+  color: var(--mainBlue);
+  text-decoration: none;
+}
+
+/* industry we care section */
+
+.ind-we-care {
+  position: relative;
+  height: 700px;
+}
+
+.ind-we-care .ind-img-box {
+  position: absolute;
+  height: 640px;
+  width: 50%;
+  right: 0px;
+}
+
+.ind-we-care .ind-img-box .we-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ind-we-care .we-industry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 100;
+}
+
+.parent-box {
+  border: 3px solid red;
+}
+
+.center-items-box {
+  display: grid;
+  align-items: center;
+  height: 640px;
+  justify-content: center;
+}
+
+.all-ind-card {
+  width: 60%;
+  background-color: rgba(37, 54, 110, 0.8);
+  padding: 20px 10px;
+}
+
+.all-ind-card .all-ind-heading {
+  font-size: 22px;
+  margin-bottom: 0px;
+  color: var(--white);
+}
+
+.all-ind-card .all-ind-data {
+  font-size: 16px;
+  margin-bottom: 0px;
+  line-height: 24px;
+  padding: 10px 0px;
+  color: var(--white);
+}
+
+.all-ind-card .all-ind-link {
+  font-size: 14px;
+  color: var(--darkBlue);
+  background-color: var(--white);
+  border: 1px solid #fff;
+  padding: 2px 4px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.all-ind-card .all-ind-link:hover {
+  text-decoration: none;
+}
+
+/* end */
