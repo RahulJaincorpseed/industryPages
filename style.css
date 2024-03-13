@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "roboto", sans-serif;
 }
 
 :root {
@@ -13,7 +14,10 @@ body {
   --white: #ffffff;
   --black: #000000;
   --darkBlue: #25366e;
+  --light-black: #303134;
 }
+
+
 
 /* #industryBox {
 } */
@@ -174,7 +178,42 @@ body {
 .ind-we-care {
   position: relative;
   height: 700px;
+  background-color: #edf5ff;
 }
+
+.ind-we-care .ind-cat-new{
+  height: 80%;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.ind-we-care .ind-cat-new::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+  background-color: var(--darkBlue); 
+  color: #fff;
+}
+
+.ind-we-care .ind-cat-new a{
+  display: block;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: var(--light-black);
+  font-weight: 500;
+}
+
+.ind-we-care .ind-cat-new a:hover{
+  text-decoration: none;
+}
+
+.ind-we-care .ind-cat-new a.active{
+  color: var(--darkBlue);
+  border-right: 5px solid var(--darkBlue);
+  background-color: rgba(37, 54, 110, 0.1);
+
+}
+
 
 .ind-we-care .ind-img-box {
   position: absolute;
@@ -210,7 +249,7 @@ body {
 .all-ind-card {
   width: 60%;
   background-color: rgba(37, 54, 110, 0.8);
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .all-ind-card .all-ind-heading {
@@ -290,11 +329,32 @@ body {
   .ind-cards{
     grid-template-columns: 1fr 1fr;
   }
+  .ind-we-care{
+    height: auto;
+  }
+  .ind-we-care .we-industry{
+    grid-template-columns: 1fr;
+  }
+  .center-items-box{
+    height: auto;
+    display: flex;
+  }
+  .ind-we-care .ind-img-box{
+    display: none;
+  }
+  .ind-we-care .ind-cat-new {
+    height: 170px;
+    padding: 5px;
+  }
+
 }
 
 @media only screen and (max-width: 600px){
   .ind-cards{
     grid-template-columns: 1fr;
+  }
+  .all-ind-card{
+    width: 80%;
   }
 }
 
