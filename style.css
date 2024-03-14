@@ -17,7 +17,85 @@ body {
   --light-black: #303134;
 }
 
+/* navbar design */
 
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.city-upper {
+  position: relative;
+}
+
+.city-upper .city-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.city-upper .city-btn:focus {
+  outline: none;
+}
+
+.city-upper .city-bottom {
+  position: absolute;
+  top: 45px;
+  height: 450px;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.city-upper .city-bottom .city-text{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.city-upper .city-bottom .list-of-city{
+  height: 300px;
+  overflow: auto;
+}
+
+.city-upper .city-bottom .search-city{
+  border: 1px solid #969191;
+  width: 100%;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+}
+.city-upper .city-bottom .search-city:focus{
+  outline: none;
+}
+
+.city-upper .city-bottom .list-of-city a{
+  display: block;
+  padding: 10px 0px;
+  color: var(--light-black);
+}
+
+.city-upper .city-bottom .list-of-city a:hover{
+  text-decoration: none;
+}
+
+.city-upper .city-bottom .list-of-city a:first-child{
+  border-top: 1px solid #000;
+}
+.city-upper .city-bottom .list-of-city a{
+  border-bottom: 1px solid #000;
+}
+
+.city-upper .city-bottom .list-of-city::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: var(--darkBlue);
+  color: #fff;
+}
+
+
+/* navbar design end */
 
 /* #industryBox {
 } */
@@ -82,6 +160,40 @@ body {
   padding-bottom: 30px;
 }
 /* end */
+
+/* faq css */
+
+.card-question{
+  border: 1px solid rgba(0,0,0,.125);
+  color: #000;
+}
+
+.card-question button{
+  color: #000;
+
+}
+
+.card-question button:hover{
+  text-decoration: none;  
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* carosel section */
 
@@ -181,21 +293,21 @@ body {
   background-color: #edf5ff;
 }
 
-.ind-we-care .ind-cat-new{
+.ind-we-care .ind-cat-new {
   height: 80%;
   width: 100%;
   padding: 20px;
   overflow-y: auto;
 }
 
-.ind-we-care .ind-cat-new::-webkit-scrollbar{
+.ind-we-care .ind-cat-new::-webkit-scrollbar {
   width: 5px;
   height: 8px;
-  background-color: var(--darkBlue); 
+  background-color: var(--darkBlue);
   color: #fff;
 }
 
-.ind-we-care .ind-cat-new a{
+.ind-we-care .ind-cat-new a {
   display: block;
   font-size: 20px;
   padding: 10px 10px;
@@ -203,17 +315,15 @@ body {
   font-weight: 500;
 }
 
-.ind-we-care .ind-cat-new a:hover{
+.ind-we-care .ind-cat-new a:hover {
   text-decoration: none;
 }
 
-.ind-we-care .ind-cat-new a.active{
+.ind-we-care .ind-cat-new a.active {
   color: var(--darkBlue);
   border-right: 5px solid var(--darkBlue);
   background-color: rgba(37, 54, 110, 0.1);
-
 }
-
 
 .ind-we-care .ind-img-box {
   position: absolute;
@@ -285,12 +395,11 @@ body {
 
 /* latest News  */
 
-
 .ind-cards .news-card {
   border-radius: 8px;
   padding: 20px;
   border: 1px solid #e5e5e5;
-  box-shadow: 0px 10px 15px rgba(0,0,0,.2);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .ind-cards .news-card .ind-heading {
@@ -304,7 +413,7 @@ body {
   padding: 10px 0px;
 }
 
-.ind-cards .news-card .ind-sm-head{
+.ind-cards .news-card .ind-sm-head {
   font-weight: 200;
   font-size: 24px;
   margin-bottom: 0px;
@@ -319,44 +428,34 @@ body {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-@media only screen and (max-width: 768px){
-  .ind-cards{
+@media only screen and (max-width: 768px) {
+  .ind-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .ind-we-care{
+  .ind-we-care {
     height: auto;
   }
-  .ind-we-care .we-industry{
+  .ind-we-care .we-industry {
     grid-template-columns: 1fr;
   }
-  .center-items-box{
+  .center-items-box {
     height: auto;
     display: flex;
   }
-  .ind-we-care .ind-img-box{
+  .ind-we-care .ind-img-box {
     display: none;
   }
   .ind-we-care .ind-cat-new {
     height: 170px;
     padding: 5px;
   }
-
 }
 
-@media only screen and (max-width: 600px){
-  .ind-cards{
+@media only screen and (max-width: 600px) {
+  .ind-cards {
     grid-template-columns: 1fr;
   }
-  .all-ind-card{
+  .all-ind-card {
     width: 80%;
   }
 }
-
-
-
